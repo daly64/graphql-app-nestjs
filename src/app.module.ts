@@ -6,7 +6,8 @@ import { UserModule } from './user/user.module';
 @Module({
   imports: [GraphQLModule.forRoot<ApolloDriverConfig>({
     driver: ApolloDriver,
-    autoSchemaFile: 'src/schema.gql',
+    // autoSchemaFile: 'src/schema.gql',
+    autoSchemaFile: true,
     subscriptions: {
       'subscriptions-transport-ws': true,
 
