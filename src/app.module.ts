@@ -8,8 +8,7 @@ import { AppController } from './app.controller';
 @Module({
   imports: [GraphQLModule.forRoot<ApolloDriverConfig>({
     driver: ApolloDriver,
-    // autoSchemaFile: 'src/schema.gql',
-    autoSchemaFile: true,
+    autoSchemaFile: 'src/schema.gql',
     playground: true,
     subscriptions: {
       'subscriptions-transport-ws': true,
